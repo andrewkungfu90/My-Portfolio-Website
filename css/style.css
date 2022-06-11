@@ -1,0 +1,25 @@
+/* Typography */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2rem;
+}
+
+/* Lists */
+
+.list {
+    font-family: "Bebas Neue" Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.list__item {
+    margin: 4rem;
+}
