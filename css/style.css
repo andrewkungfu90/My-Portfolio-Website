@@ -11,15 +11,69 @@ body {
 /* Lists */
 
 .list {
-    font-family: "Bebas Neue" Arial, Helvetica, sans-serif;
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
     font-weight: 600;
     list-style: none;
     padding-left: 0;
     text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
+    margin: 1rem;
 }
 
 .list__item {
-    margin: 4rem;
+    margin: 4.5rem;
+}
+
+.list__item > a {
+    color: rgb(206, 201, 201);
+}
+
+.list__item > a:hover {
+    color: rgb(39, 142, 142);
+    transition: 0.3s;
+}
+
+@media screen and (min-width: 768px) {
+    .list {
+        font-size: 2rem;
+    }
+}
+
+/* NavBar */
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.img-bg {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/keyboard.jpg);
+    background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+    nav .list {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+}
+
+/* Links */
+
+a {
+    text-decoration: none;
+}
+
+/* Icon */
+
+.icon {
+    width: 40px;
+    width: 40px;
+}
+
+.icon--white {
+    fill: white;
 }
