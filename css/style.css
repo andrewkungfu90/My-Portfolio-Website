@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Typography */
 
 html {
@@ -36,6 +42,10 @@ body {
     .list {
         font-size: 2rem;
     }
+
+    .list__item {
+        margin: 2rem 4rem;
+    }
 }
 
 /* NavBar */
@@ -44,11 +54,13 @@ nav {
     display: flex;
     justify-content: center;
     font-size: 2.5rem;
+    background: rgba(94, 102, 131, 0.3);
+    position: sticky;
 }
 
 .img-bg {
     width: 100%;
-    height: 100vh;
+    height: 900px;
     background-image: url(../images/keyboard.jpg);
     background-size: cover;
 }
@@ -65,15 +77,4 @@ nav {
 
 a {
     text-decoration: none;
-}
-
-/* Icon */
-
-.icon {
-    width: 40px;
-    width: 40px;
-}
-
-.icon--white {
-    fill: white;
 }
