@@ -58,7 +58,7 @@ nav {
     justify-content: center;
     align-items: center;
     font-size: 2.5rem;
-    background: rgba(101, 80, 80, 0.5);
+    background: rgba(101, 80, 80);
     position: sticky;
     top: 0;
 }
@@ -83,14 +83,12 @@ a {
 .home {
     display: flex;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.5);
-    height: 630px;
     justify-content: center;
     align-items: center;
 }
 
 .home__heading {
-    color: rgb(251, 133, 30);
+    color: rgb(241, 146, 51);
     line-height: 1.8;
     font-weight: bolder;
 }
@@ -117,7 +115,7 @@ a {
 
 @media screen and (min-width: 768px) {
     .home::before {
-        height: 630px;
+        height: 700px;
     }
 
     .main {
