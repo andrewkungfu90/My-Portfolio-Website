@@ -58,9 +58,10 @@ nav {
     justify-content: center;
     align-items: center;
     font-size: 2.5rem;
-    background: rgba(101, 80, 80);
+    background: rgb(103, 35, 35);
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 
@@ -83,23 +84,23 @@ a {
 .home {
     display: flex;
     flex-direction: column;
+    height: 56.5rem;
     justify-content: center;
     align-items: center;
 }
 
 .home__heading {
-    color: rgb(241, 146, 51);
-    line-height: 1.8;
-    font-weight: bolder;
+  color: rgb(221, 198, 177);
+  z-index: -1;
 }
 
-.home::before {
+.home::before{
     content: "";
     position: absolute;
     top: 0;
     right: 0;
     background: url(../images/keyboard.jpg) no-repeat center center/cover;
-    height: 900px;
+    height: 90rem;
     width: 100%;
     z-index: -1;
 }
@@ -109,22 +110,22 @@ a {
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 80%;
+    top: 75%;
     text-align: center;
+    line-height: 1.5;
 }
 
 @media screen and (min-width: 768px) {
     .home::before {
-        height: 700px;
+        height: 63rem;
     }
 
     .main {
         position: absolute;
-        top: 25%;
+        top: 29%;
     }
 
     .home__heading {
         font-size: 6rem;
-        line-height: 2.4;
     }
 }
