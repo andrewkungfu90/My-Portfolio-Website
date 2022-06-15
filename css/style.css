@@ -1,4 +1,7 @@
-/* Typography */
+* {
+    box-sizing: border-box;
+}
+
 
 html {
     font-size: 62.5%;
@@ -6,6 +9,12 @@ html {
 
 body {
     font-size: 2rem;
+}
+
+/* Typography */
+
+h1, h2, h3 {
+    font-family:"Cormorant Upright", Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Lists */
@@ -24,7 +33,7 @@ body {
 }
 
 .list__item > a {
-    color: rgb(206, 201, 201);
+    color: rgb(213, 191, 191);
 }
 
 .list__item > a:hover {
@@ -49,7 +58,7 @@ nav {
     justify-content: center;
     align-items: center;
     font-size: 2.5rem;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(101, 80, 80, 0.5);
     position: sticky;
     top: 0;
 }
@@ -74,9 +83,16 @@ a {
 .home {
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 840px;
-    
+    background: rgba(0, 0, 0, 0.5);
+    height: 630px;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__heading {
+    color: rgb(251, 133, 30);
+    line-height: 1.8;
+    font-weight: bolder;
 }
 
 .home::before {
@@ -88,5 +104,29 @@ a {
     height: 900px;
     width: 100%;
     z-index: -1;
-    opacity: .8;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 80%;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .home::before {
+        height: 630px;
+    }
+
+    .main {
+        position: absolute;
+        top: 25%;
+    }
+
+    .home__heading {
+        font-size: 6rem;
+        line-height: 2.4;
+    }
 }
