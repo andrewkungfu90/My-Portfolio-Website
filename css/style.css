@@ -99,9 +99,10 @@ a {
 /* Icons */
 
 .icon {
-    width: 50px;
+    width: 30px;
     height: 40px;
-    fill:rgb(213, 191, 191);
+    fill:rgb(222, 201, 201);
+    margin-right: 1rem;
 }
 
 /* Home Section */
