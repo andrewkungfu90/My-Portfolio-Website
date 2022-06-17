@@ -9,7 +9,7 @@ body {
 /* Typography */
 
 h1, h2, h3 {
-    font-family:"Lobster", Georgia, 'Times New Roman', Times, serif;
+    font-family:"Aladin", Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Lists */
@@ -22,7 +22,7 @@ h1, h2, h3 {
     margin: 1rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 /* NavBar */
@@ -106,20 +106,21 @@ a {
 
 /* Home Section */
 
-.home {
+.hero {
     display: flex;
     flex-direction: column;
     height: 45rem;
     justify-content: center;
     align-items: center;
+    background: rgba(0, 0, 0, 0.6);
 }
 
-.home__heading {
-    color: rgb(185, 118, 31);
+.hero__heading {
+    color: rgb(177, 177, 222);
     z-index: 2;
 }
 
-.home::before{
+.hero::before{
     content: "";
     position: absolute;
     right: 0;
@@ -127,31 +128,32 @@ a {
     height: 50rem;
     width: 100%;
     z-index: -1;
+    opacity: 1;
 }
 
-.main {
+.hero__content {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
     text-align: center;
-    line-height: 1.9;
+    line-height: 1.5;
     top: 4;
 }
 
 @media screen and (min-width: 768px) {
-    .home::before {
+    .hero::before {
       height: 62rem;
     }
-    .main {
+    .hero__content {
       position: absolute;
-      top: 20%;
+      top: 25%;
     }
-    .home__heading {
-      font-size: 7rem;
+    .hero__heading {
+      font-size:  7.5rem;
     }
-    .home {
-      height: 56rem;
+    .hero {
+      height: 62rem;
     }
 }
 
