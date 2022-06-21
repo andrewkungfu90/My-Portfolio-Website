@@ -6,25 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Bebas+Neue&family=Norican&family=Petit+Formal+Script&family=Waiting+for+the+Sunrise&family=Walter+Turncoat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Bebas+Neue&family=Source+Serif+Pro:ital@1&display=swap" rel="stylesheet">
     <title>My Portfolio Website</title>
 </head>
 <body>
-      <nav class="nav collapsible">
-        <ul class="list nav__list collapsible__content">
-          <li class="nav__item"><a href="#">Home</a></li>
-          <li class="nav__item"><a href="#">About</a></li>
-          <li class="nav__item"><a href="#">Portfolio</a></li>
-          <li class="nav__item"><a href="#">Contact</a></li>
-        </ul>
-        <svg class="icon nav__toggler">
-         <use xlink:href="images/sprite.svg#icons8-menu"></use>
-        </svg>
-      </nav>
-      <section class="hero">
+        <nav class="nav collapsible">
+          <ul class="list nav__list collapsible__content">
+            <li class="nav__item"><a href="#">Home</a></li>
+            <li class="nav__item"><a href="#">About</a></li>
+            <li class="nav__item"><a href="#">Portfolio</a></li>
+            <li class="nav__item"><a href="#">Contact</a></li>
+          </ul>
+          <svg class="icon nav__toggler">
+           <use xlink:href="images/sprite.svg#icons8-menu"></use>
+          </svg>
+        </nav>
+    <section class="hero">
         <div class="hero__content">
           <h1 class="hero__heading">I am Andrea Siano <br> A Front-End Developer</h1>
         </div>
+    </section>
+    <section class="block">
+      <header class="block__header">
+        <h2>About Me</h2>
+      </header>
+      <div class="about-me">
+        <div class="grid grid--1x2">
+          <header class="about-me__image">
+            <img class="" src="images/my-image.jpeg" alt="">
+          </header>
+          <article class="mybio">
+            <p>I had several work experiences that helped me gain some important skills: good customer care relations, problem solving and empathy. Also I am really fond of languages, especially chinese and japanese. I studied them at the university of Bologna, where i could go deep in some understandings of Asian Markets, studying their governance and economics. Then i decided to enroll for a Master in Tourism Management. During the attendance i thought it was important to improve my skills in Tech industry as well, i think it may be really useful learning new languages (html, css, java script). I am a very welcoming person, extroverted and i love to prove myself in a challenging and fun environment.</p>
+        </div>
+      </div>
     </section>
     <script src="js/main.js"></script>
 </body>

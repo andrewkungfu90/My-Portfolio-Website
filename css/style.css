@@ -1,18 +1,19 @@
 html {
-    font-size: 62.5%;
+   font-size: 62.5%;
 }
 
 body {
-    font-size: 2rem;
+   font-size: 2rem;
+   font-family: "Source Serif Pro", Arial, Helvetica, sans-serif;
 }
 
-/* Typography */
+/* Typography Section */
 
 h1, h2, h3 {
-    font-family:"Aladin", Georgia, 'Times New Roman', Times, serif;
+   font-family:"Aladin", Georgia, 'Times New Roman', Times, serif;
 }
 
-/* Lists */
+/* Lists Section */
 
 .list {
     font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
@@ -25,7 +26,7 @@ h1, h2, h3 {
     align-items: flex-start;
 }
 
-/* NavBar */
+/* NavBar Section*/
 
 nav {
     display: flex;
@@ -90,13 +91,13 @@ nav {
     }
 }
 
-/* Links */
+/* Links Section */
 
 a {
     text-decoration: none;
 }
 
-/* Icons */
+/* Icons Section */
 
 .icon {
     width: 30px;
@@ -105,7 +106,7 @@ a {
     margin-right: 1rem;
 }
 
-/* Home Section */
+/* Hero Section */
 
 .hero {
     display: flex;
@@ -143,6 +144,15 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .hero__heading {
+    font-size: 5rem;
+  }
+  .hero {
+    height: 49rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
     .hero::before {
       height: 62rem;
     }
@@ -158,7 +168,7 @@ a {
     }
 }
 
-/* Collapsible */
+/* Collapsible Section */
 
 .collapsible__content {
   max-height: 0;
@@ -171,3 +181,60 @@ a {
   max-height: 100vh;
   opacity: 1;
 }
+
+/* Grids Section */
+
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* About Me Section */
+
+.about-me {
+  padding: 0 3rem;
+}
+
+.about-me__image > img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.block {
+  --padding-vertical: 5rem;
+  padding: var(--padding-vertical) 2rem;
+  background: rgb(44, 47, 54);
+}
+
+.block__header {
+  text-align: center;
+  margin-bottom: 4rem;
+  color: rgb(199, 195, 178);
+}
+
+.mybio {
+  font-size: 1.7rem;
+  color: rgb(238, 237, 231);
+  line-height: 1.2;
+}
+
+@media screen and (min-width: 768px) {
+  .about-me__image > img {
+    width: 65%;
+  }
+
+  .block__header {
+    font-size: 3.5rem;
+  }
+
+  .mybio {
+    font-size: 2rem;
+  } 
+}
+
+
