@@ -120,6 +120,7 @@ a {
 .hero__heading {
     color: rgb(177, 177, 222);
     z-index: 2;
+    font-size: 5.5rem;
 }
 
 .hero::before{
@@ -206,32 +207,31 @@ a {
 }
 
 .block {
-  --padding-vertical: 5rem;
+  --padding-vertical: 2rem;
   padding: var(--padding-vertical) 2rem;
   background: rgb(44, 47, 54);
 }
 
 .block__header {
   text-align: center;
-  margin-bottom: 4rem;
-  color: rgb(199, 195, 178);
+  color: #e6dbaf;
+  font-size: 3rem;
+}
+
+.about-me__heading {
+  margin-bottom: 1.8rem;
 }
 
 .mybio {
-  font-size: 1.7rem;
-  color: rgb(238, 237, 231);
-  line-height: 1.2;
+  font-size: 2.5rem;
+  color: #79776f;
+  line-height: 1.6;
 }
 
 @media screen and (min-width: 768px) {
   .about-me__image > img {
     width: 80%;
   }
-
-  .block__header {
-    font-size: 3.5rem;
-  }
-
   .mybio {
     font-size: 2rem;
   } 
@@ -240,7 +240,41 @@ a {
 @media screen and (min-width: 1024px) {
   .about-me__image > img {
     width: 65%;
+    margin-left: 8rem;
+  } 
+}
+
+/* Blocks */
+
+.block {
+  --padding-vertical: 2rem;
+  padding: var(--padding-vertical) 2rem;
+  background: rgb(44, 47, 54);
+}
+
+.block__header {
+  text-align: center;
+  color: #e6dbaf;
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .block__header {
+    font-size: 3.5rem;
+  } 
+}
+
+@media screen and (min-width: 1024px) {
+  .block__header {
+    font-size: 4rem;
   }
 }
+
+
+
+
+
+
+
 
 
