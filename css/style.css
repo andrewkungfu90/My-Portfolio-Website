@@ -225,7 +225,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .about-me__image > img {
-    width: 65%;
+    width: 80%;
   }
 
   .block__header {
@@ -235,6 +235,12 @@ a {
   .mybio {
     font-size: 2rem;
   } 
+}
+
+@media screen and (min-width: 1024px) {
+  .about-me__image > img {
+    width: 65%;
+  }
 }
 
 
