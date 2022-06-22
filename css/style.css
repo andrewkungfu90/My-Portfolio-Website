@@ -3,7 +3,6 @@ html {
 }
 
 body {
-   font-size: 2rem;
    font-family: "Source Serif Pro", Arial, Helvetica, sans-serif;
 }
 
@@ -32,9 +31,9 @@ nav {
     display: flex;
     font-size: 2.5rem;
     background: rgb(45, 17, 17);
-    position: sticky;
     top: 0;
     z-index: 3;
+    position: sticky;
 }
 
 .nav__toggler {
@@ -89,6 +88,38 @@ nav {
     .nav__toggler {
         display: none;
     }
+}
+
+/* Buttons */
+
+.btn {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  padding: 1.8rem 2rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  border: 1px solid rgb(177, 177, 222);
+  color: rgb(145, 145, 230);
+  letter-spacing: 4px;
+  font-family: "Aladin";
+}
+
+.btn:hover {
+  background: rgb(145, 145, 230);
+  transition: 0.5s;
+  color: #e6dbaf;
+}
+
+.mycv {
+  margin: 4rem 0;
+}
+
+@media screen and (max-width: 280px) {
+  .btn {
+    font-size: 1rem;
+  }
 }
 
 /* Links Section */
@@ -206,18 +237,6 @@ a {
   border-radius: 10px;
 }
 
-.block {
-  --padding-vertical: 2rem;
-  padding: var(--padding-vertical) 2rem;
-  background: rgb(44, 47, 54);
-}
-
-.block__header {
-  text-align: center;
-  color: #e6dbaf;
-  font-size: 3rem;
-}
-
 .about-me__heading {
   margin-bottom: 1.8rem;
 }
@@ -231,6 +250,7 @@ a {
 @media screen and (min-width: 768px) {
   .about-me__image > img {
     width: 80%;
+    margin: 7rem 0;
   }
   .mybio {
     font-size: 2rem;
@@ -240,7 +260,7 @@ a {
 @media screen and (min-width: 1024px) {
   .about-me__image > img {
     width: 65%;
-    margin-left: 8rem;
+    margin: 0 0 0 8rem;
   } 
 }
 
