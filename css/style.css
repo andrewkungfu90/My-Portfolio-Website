@@ -220,9 +220,20 @@ a {
   display: grid;
 }
 
+.grid--gallery {
+  column-gap: 1rem;
+  row-gap: .1rem;
+}
+
 @media screen and (min-width: 768px) {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -272,6 +283,10 @@ a {
   background: rgb(44, 47, 54);
 }
 
+.block--dark {
+  background: rgb(36, 25, 25);
+}
+
 .block__header {
   text-align: center;
   color: #e6dbaf;
@@ -289,6 +304,25 @@ a {
     font-size: 4rem;
   }
 }
+
+/* My Portfolio Section */
+
+.my-portfolio__heading {
+  color: rgb(177, 177, 222);
+}
+
+.portfolio__image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.portfolio__gallery {
+  border: 1px solid orange;
+}
+
+
+
+
 
 
 
