@@ -102,9 +102,9 @@ nav {
   font-weight: 900;
   border: 1px solid rgb(177, 177, 222);
   color: rgb(145, 145, 230);
-  letter-spacing: 4px;
   font-family: "Aladin";
 }
+
 
 .btn:hover {
   background: rgb(145, 145, 230);
@@ -368,6 +368,44 @@ a {
   font-size: 1.5rem;
   color: rgb(185, 118, 31);
 }
+
+/* Forms */
+
+.contact__input {
+  display: block;
+  margin: 2rem auto;
+  border-radius: 40px;
+  font-size: 1.5rem;
+  padding: 2rem;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.contact__input:hover {
+  box-shadow: 0px 0px 0px 3px rgb(231, 180, 28);
+  transition: 0.5s;
+}
+
+.btn--contact {
+  padding: 2rem 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background: none;
+  color: #fff;
+  background-color: rgb(185, 118, 31);
+}
+
+.btn--contact:hover {
+  background: rgb(151, 101, 35);
+  transition: 0.5s;
+  box-shadow: none;
+}
+
+::placeholder {
+  opacity: 0.5;
+  color: rgb(185, 118, 31);
+}
+
 
 
 
