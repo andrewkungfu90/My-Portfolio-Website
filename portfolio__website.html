@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a1fc5cf420.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Bebas+Neue&family=Source+Serif+Pro:ital@1&display=swap" rel="stylesheet">
     <title>My Portfolio Website</title>
@@ -16,7 +17,7 @@
               <li class="nav__item"><a href="#section-hero">Home</a></li>
               <li class="nav__item"><a href="#section-about__me">About</a></li>
               <li class="nav__item"><a href="#section-my__portfolio">Portfolio</a></li>
-              <li class="nav__item"><a href="#">Contact</a></li>
+              <li class="nav__item"><a href="#section-contact__me">Contact</a></li>
         </ul>
           <svg class="icon nav__toggler">
             <use xlink:href="images/sprite.svg#icons8-menu"></use>
@@ -120,18 +121,42 @@
           </a>
     </div>
 </section>
-<section class="block">
+<section id="section-contact__me" class="block contact">
   <header class="block__header">
     <h2 class="contact-me__heading">Contact Me</h2>
-  </header>
-    <form class="" action="">
-      <input class="contact__input" type="text" name="Name" placeholder="Your Name" required>
-      <input class="contact__input" type="email" name="Email" placeholder="Your Email" required>
-      <input class="contact__input" type="text" name="Subject" placeholder="Subject" required>
-      <textarea class="contact__input" name="Message" id="" cols="30" rows="10" placeholder="Message"></textarea>
-      <button class="contact__input btn btn--contact">Send Message</button>
-    </form>
+</header>
+<div class="grid grid--1x2">
+  <div class="contact-info">
+      <div class="boxInfo">
+          <div class="icon--contact"><i class="fa-solid fa-location-pin"></i></div>
+            <div class="text">
+              <h3 class="contact__heading">Address</h3>
+              <p class="contact__description">2a Foxfield Avenue, Raheny, <br> Dublin D05 ND86</p>
+            </div>
+        </div>
+          <div class="boxInfo">
+            <div class="icon--contact"><i class="fa-solid fa-envelope"></i></div>
+              <div class="text">
+                <h3 class="contact__heading">Email</h3>
+                <p class="contact__description">andrea.siano@studio.unibo.it <br> andrejazz2011@gmail.com</p>
+            </div>
+          </div>
+        <div class="boxInfo">
+          <div class="icon--contact"><i class="fa-solid fa-phone"></i></div>
+            <div class="text">
+              <h3 class="contact__heading">Phone</h3>
+              <p class="contact__description">+393464920807/0858176409</p>
+          </div>
+      </div>
+  </div>
+   <form class="contact-me__form" action="">
+        <input class="contact__input" type="text" name="Name" placeholder="Your Name" required>
+        <input class="contact__input" type="email" name="Email" placeholder="Your Email" required>
+        <input class="contact__input" type="text" name="Subject" placeholder="Subject" required>
+        <textarea class="contact__input" name="Message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+        <button class="contact__input btn btn--contact">Send Message</button>
+      </form>
+</div>
 </section>
-<script src="js/main.js"></script>
 </body>
 </html>
