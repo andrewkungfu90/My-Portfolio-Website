@@ -444,13 +444,19 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .contact__input {
+    margin-left: 3rem;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .contact-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-left: 8rem;
+    margin-left: 10rem;
     margin-top: -12rem;
   }  
   .boxInfo {
@@ -473,7 +479,7 @@ a {
 
 @media screen and (min-width: 1280px) {
   .contact-info {
-    margin-left: 10rem;
+    margin-left: 20rem;
   }
 }
 
