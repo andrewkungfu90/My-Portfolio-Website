@@ -1,25 +1,17 @@
 @import './normalize.css';
-
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Bebas+Neue&family=Source+Serif+Pro:ital,wght@1,200&display=swap');
 html {
   font-size: 62.5%;
 }
-
 html, body {
   overflow-x: hidden;
 }
-
 body {
    font-family: "Source Serif Pro", Arial, Helvetica, sans-serif;
 }
-
-/* Typography Section */
-
 h1, h2, h3 {
    font-family:"Aladin", Georgia, 'Times New Roman', Times, serif;
 }
-
-/* Lists Section */
-
 .list {
     font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
     font-weight: 600;
@@ -30,13 +22,9 @@ h1, h2, h3 {
     flex-direction: column;
     align-items: flex-start;
 }
-
 .list__item {
   margin: 1rem;
 }
-
-/* NavBar Section*/
-
 .nav {
   display: flex;
   font-size: 2.5rem;
@@ -45,45 +33,36 @@ h1, h2, h3 {
   position: fixed;
   width: 100%;
 }
-
 .nav__toggler {
     opacity: 0.5;
     cursor: pointer;
 }
-
 .nav__list {
   width: 100%;
   margin: 0;
 }
-
 .nav__item  {
   padding: 0.5rem 2rem;
 }
-
 .nav__item:last-of-type {
   border-bottom: none;
 }
-
 .nav__item > a {
   color:rgb(213, 191, 191);
   transition: color 0.3s;
 }
-
 .nav__item > a:hover {
   color:rgb(185, 118, 31);
 }
-
 .nav__toggler {
   opacity: 0.5;
   transition: 0.15s;
   cursor: pointer;
 }
-
 .nav.collapsible--expanded .nav__toggler {
   opacity: 1;
   border-radius: 5px;
 }
-
 @media screen and (min-width: 768px) {
     nav .list {
         display: flex;
@@ -99,9 +78,6 @@ h1, h2, h3 {
         display: none;
     }
 }
-
-/* Buttons */
-
 .btn {
   border-radius: 40px;
   border: 0;
@@ -114,56 +90,41 @@ h1, h2, h3 {
   color: rgb(145, 145, 230);
   font-family: "Aladin";
 }
-
-
 .btn:hover {
   background: rgb(145, 145, 230);
   transition: 0.5s;
   color: #e6dbaf;
 }
-
 .mycv {
   margin: 4rem 0;
 }
-
 @media screen and (max-width: 280px) {
   .btn {
-    font-size: 1rem;
+  font-size: 1rem;
   }
 }
-
-/* Links Section */
-
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-
-/* Icons Section */
-
 .icon {
-    width: 30px;
-    height: 40px;
-    fill:rgb(222, 201, 201);
-    margin-right: 1rem;
+  width: 30px;
+  height: 40px;
+  fill:rgb(222, 201, 201);
+  margin-right: 1rem;
 }
-
-/* Hero Section */
-
 .hero {
-    display: flex;
-    flex-direction: column;
-    height: 45rem;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  height: 45rem;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
 }
-
 .hero__heading {
     color: rgb(177, 177, 222);
     z-index: 2;
     font-size: 5.5rem;
 }
-
 .hero::before{
     content: "";
     position: absolute;
@@ -174,7 +135,6 @@ a {
     z-index: -1;
     opacity: 1;
 }
-
 .hero__content {
     display: flex;
     flex-direction: column;
@@ -184,7 +144,6 @@ a {
     line-height: 1.5;
     top: 4;
 }
-
 @media screen and (min-width: 768px) {
   .hero__heading {
     font-size: 5rem;
@@ -193,7 +152,6 @@ a {
     height: 49rem;
   }
 }
-
 @media screen and (min-width: 1024px) {
     .hero::before {
       height: 62rem;
@@ -209,32 +167,23 @@ a {
       height: 62rem;
     }
 }
-
-/* Collapsible Section */
-
 .collapsible__content {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
   transition: all 0.3s;
 }
-
 .collapsible--expanded .collapsible__content {
   max-height: 100vh;
   opacity: 1;
 }
-
-/* Grids Section */
-
 .grid {
   display: grid;
 }
-
 .grid--gallery {
   column-gap: 2rem;
   row-gap: 2rem;
 }
-
 @media screen and (min-width: 768px) {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
@@ -246,28 +195,21 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
-/* About Me Section */
-
 .about-me {
   padding: 0 3rem;
 }
-
 .about-me__image > img {
   width: 100%;
   border-radius: 10px;
 }
-
 .about-me__heading {
   margin-bottom: 1.8rem;
 }
-
 .mybio {
   font-size: 2.5rem;
   color: #c0bdb0;
   line-height: 1.6;
 }
-
 @media screen and (min-width: 768px) {
   .about-me__image > img {
     width: 80%;
@@ -277,68 +219,53 @@ a {
     font-size: 2rem;
   } 
 }
-
 @media screen and (min-width: 1024px) {
   .about-me__image > img {
     width: 65%;
     margin: 0 0 0 8rem;
   } 
 }
-
-/* Blocks */
-
 .block {
   --padding-vertical: 2rem;
   padding: var(--padding-vertical) 2rem;
   background: rgb(44, 47, 54);
 }
-
 .block--dark {
   background: rgb(36, 25, 25);
   padding-bottom: 7rem;
 }
-
 .block__header {
   text-align: center;
   color: #e6dbaf;
   font-size: 3rem;
 }
-
 @media screen and (min-width: 768px) {
   .block__header {
     font-size: 3.5rem;
   } 
 }
-
 @media screen and (min-width: 1024px) {
   .block__header {
     font-size: 4rem;
   }
 }
-
-/* My Portfolio Section */
-
 .my-portfolio__heading {
   color: rgb(177, 177, 222);
 }
-
 .gallery__wrapper {
   position: relative;
   width: 100%;
 }
-
 .gallery__wrapper:hover {
   transform: scale(1.05);
   transition: transform 0.4s;
 }
-
 .portfolio__image {
   display: block;
   width: 100%;
   height: 100%;
   border-radius: 10px;
 }
-
 .image__overlay {
   position: absolute;
   top: 0;
@@ -357,68 +284,53 @@ a {
   transition: opacity 0.4s;
   backdrop-filter: blur(2px);
 }
-
 .image__overlay > * {
   transform: translateY(2rem);
   transition: transform 0.25s;
 }
-
 .image__overlay:hover > * {
   transform: translateY(0);
 }
-
 .image__overlay:hover {
   opacity: 1;
 }
-
 .image__title {
   font-size: 2rem;
   font-weight: bold;
 }
-
 .image__description {
   font-size: 1.5rem;
   color: rgb(185, 118, 31);
 }
-
-/* Contact Section */
-
 .contact {
-  background: url(../images/myroom.webp);
+  background: url();
   background-size: cover;
 }
-
 .contact-info {
   display: flex;
   flex-direction: column;
 }
-
 .boxInfo {
   text-align: center;
   margin: 2rem;
 }
-
 .icon--contact {
   color: #fff;
   font-size: 2rem;
 }
-
 .contact__heading {
   color: #e6dbaf;
   font-size: 2rem;
   margin: 0.3rem;
 }
-
 .contact-me__heading {
   padding-bottom: 4rem;
 }
-
 .contact__description {
   color: #fff;
   font-size: 1.5rem;
   margin: 0.3rem;
 }
-
 .contact__input {
   display: block;
   margin: 2rem auto;
@@ -428,12 +340,10 @@ a {
   outline: 0;
   border: 0;
 }
-
 .contact__input:hover {
   box-shadow: 0px 0px 0px 3px rgb(197, 182, 74) ;
   transition: 0.5s;
 }
-
 .btn--contact {
   padding: 2rem 2rem;
   font-family: Arial, Helvetica, sans-serif;
@@ -441,29 +351,24 @@ a {
   color: #fff;
   background-color: rgb(185, 118, 31);
 }
-
 .btn--contact:hover {
   background: rgb(151, 101, 35);
   transition: 0.5s;
   box-shadow: none;
 }
-
 ::placeholder {
   color: rgb(49, 32, 10);
 }
-
 @media screen and (max-width: 280px) {
   .contact__input {
     font-size: 1rem;
   }
 }
-
 @media screen and (min-width: 768px) {
   .contact__input {
     margin-left: 3rem;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .contact-info {
     display: flex;
@@ -490,22 +395,17 @@ a {
     margin: 1rem 16rem;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .contact-info {
     margin-left: 20rem;
   }
 }
-
-/* Footer */
-
 .portfolio__footer {
   background: rgb(45, 17, 17);
   height: auto;
   width: auto;
   color: #fff;
 } 
-
 .footer__content {
   display: flex;
   flex-direction: column;
@@ -513,7 +413,6 @@ a {
   justify-content: center;
   line-height: 1;
 }
-
 .footer-bottom {
   text-align: center;
   background: rgb(16, 18, 20);
@@ -521,31 +420,29 @@ a {
   font-size: 1rem;
   letter-spacing: 0.1rem;
 }
-
 .social__heading {
   font-size: 2rem;
 }
-
 .socials {
   display: flex;
   flex-direction: row;
   margin: 1rem 0 4rem 0;
 }
-
 .socials a {
   color: #fff;
   font-size: 2rem;
 }
-
+.socials a {
+  color: #fff;
+  font-size: 2rem;
+}
 .socials a:hover i {
   color: rgb(82, 82, 181);
   transition: 0.3s;
 }
-
 .copyright__section {
   font-size: 1rem;
 }
-
 @media screen and (min-width: 768px) {
   .socials a {
     font-size: 2.5rem;
