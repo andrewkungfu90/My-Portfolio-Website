@@ -213,7 +213,7 @@ a {
     line-height: 1.5;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   .about-me__image > img {
     width: 80%;
     margin: 2rem 0 0 0 0;
