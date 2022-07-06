@@ -11,6 +11,7 @@
     <meta property="og:description" content="My personal Portfolio Website">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/a1fc5cf420.js" crossorigin="anonymous"></script>
     <title>Andrew Siano-My Portfolio Website</title>
 </head>
@@ -32,10 +33,10 @@
           </div>
   </section>
 <section id="section-about__me" class="block about-me__section">
-      <header class="block__header">
+      <header class="block__header" data-aos="fade-up">
         <h2 class="about-me__heading">About Me</h2>
       </header>
-      <div class="about-me">
+      <div class="about-me" data-aos="fade-up">
         <div class="grid grid--1x2">
           <header class="about-me__image">
               <img class="" width="640" height="360" src="images/myimage.webp" alt="My personal image">
@@ -55,10 +56,10 @@
       </div>
 </section>
 <section id="section-my__portfolio" class="block block--dark my-portfolio__section">
-  <header class="block__header">
+  <header class="block__header" data-aos="zoom-in">
     <h2 class="my-portfolio__heading">My Portfolio</h2>
   </header>  
-    <div class="grid grid--gallery grid--1x2 grid--1x3">
+    <div class="grid grid--gallery grid--1x2 grid--1x3" data-aos="zoom-in">
           <a href="https://moshified35.netlify.app/" target="_blank">
             <div class="gallery__wrapper">
                 <picture>
@@ -137,10 +138,10 @@
     </div>
 </section>
 <section id="section-contact__me" class="block contact">
-  <header class="block__header">
+  <header class="block__header" data-aos="zoom-out-left">
     <h2 class="contact-me__heading">Contact Me</h2>
 </header>
-<div class="grid grid--1x2">
+<div class="grid grid--1x2" data-aos="zoom-out-left">
   <div class="contact-info">
       <div class="boxInfo">
           <div class="icon--contact"><i class="fa-solid fa-location-pin"></i></div>
@@ -188,5 +189,9 @@
   </div>
 </footer>
 <script src="js/main.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
