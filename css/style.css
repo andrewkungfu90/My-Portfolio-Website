@@ -206,8 +206,8 @@ a {
 }
 @media screen and (min-width: 768px) {
   .about-me__image > img {
-    width: 94%;
-    margin: 10rem 0;
+    width: 84%;
+    margin: 5rem 0;
   }
   .mybio {
     line-height: 1.5;
@@ -215,8 +215,8 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .about-me__image > img {
-    width: 90%;
-    margin: 7rem 0 0 0 0;
+    width: 80%;
+    margin: 2rem 0 0 0 0;
   } 
   .mybio {
     font-size: 2.5rem;
