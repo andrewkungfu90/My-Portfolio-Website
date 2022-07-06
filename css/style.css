@@ -215,8 +215,8 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .about-me__image > img {
-    width: 65%;
-    margin: 0 0 0 8rem;
+    width: 80%;
+    margin: 0 0 0 2rem;
   } 
 }
 .block {
@@ -234,7 +234,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .block__header {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -243,7 +243,7 @@ a {
   padding: var(--padding-vertical) 10rem;
 }
   .block__header {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }
 .my-portfolio__section {
