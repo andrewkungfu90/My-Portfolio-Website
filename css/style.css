@@ -419,11 +419,12 @@ a {
   }
   .contact__input {
     margin: 2rem 6rem;
+    font-size: 2rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .contact-info {
-    margin-left: 20rem;
+    margin-left: 13rem;
   }
 }
 /*Footer*/
