@@ -282,7 +282,6 @@ a {
   opacity: 0;
   cursor: pointer;
   transition: opacity 0.4s;
-  backdrop-filter: blur(2px);
 }
 .image__overlay > * {
   transform: translateY(2rem);
@@ -300,7 +299,7 @@ a {
 }
 .image__description {
   font-size: 1.5rem;
-  color: rgb(210, 198, 182);
+  font-weight: bold;
 }
 .contact {
   background: url(../images/myroom.webp);
