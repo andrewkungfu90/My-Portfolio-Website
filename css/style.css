@@ -1,5 +1,5 @@
 @import './normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Bebas+Neue&family=Source+Serif+Pro:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ibarra+Real+Nova&family=Source+Serif+Pro:wght@200&display=swap" rel="stylesheet');
 html {
   font-size: 62.5%;
 }
@@ -11,7 +11,7 @@ body {
    font-family: "Source Serif Pro", Georgia, 'Times New Roman', Times, serif;
 }
 h1, h2, h3 {
-   font-family:"Aladin", Arial, Helvetica, sans-serif;
+   font-family:"Ibarra Real Nova", Arial, Helvetica, sans-serif;
 }
 /* Lists */
 .list {
